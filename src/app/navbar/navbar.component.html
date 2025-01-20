@@ -1,12 +1,20 @@
-<div class="d-flex justify-content-between align-items-center mb-2 mb-sm-3">
+<nav class="d-flex justify-content-between align-items-center mb-2 mb-sm-3">
   <app-base-icon
     classes="w-25"
     imageUrl="bilder-und-icons/logo.png"
     imageAlt="logo"
   ></app-base-icon>
-  <div class="menu">
-    <span class="text-grey">MENÜ</span>
-    <div class="line bg-grey mb-1"></div>
-    <div class="line bg-grey"></div>
+  <div (click)="toggleMenu()" class="menu-icon">
+    <span class="text-grey mb-1">
+      {{ menuOpen ? "Close" : "MENÜ" }}
+    </span>
+    <div class="line bg-grey mb-1" [class.rotate1]="menuOpen"></div>
+    <div class="line bg-grey" [class.rotate2]="menuOpen"></div>
   </div>
-</div>
+
+  <div class="menu" [class.show]="menuOpen">
+    <a (click)="onAnchorClick()" href="#section1">Service </a>
+    <a (click)="onAnchorClick()" href="#section2">Kontakte </a>
+    <a (click)="onAnchorClick()" href="#section3">NewsLetter</a>
+  </div>
+</nav>

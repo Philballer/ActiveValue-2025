@@ -5,6 +5,7 @@ import { BodyInfoComponent } from './body-info/body-info.component';
 import { CardComponent } from './card/card.component';
 import { NewsletterBannerComponent } from './newsletter-banner/newsletter-banner.component';
 import { FooterComponent } from './footer/footer.component';
+import { ContactFormularComponent } from './contact-formular/contact-formular.component';
 
 @Component({
   selector: 'app-root',
@@ -15,6 +16,7 @@ import { FooterComponent } from './footer/footer.component';
     CardComponent,
     NewsletterBannerComponent,
     FooterComponent,
+    ContactFormularComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',

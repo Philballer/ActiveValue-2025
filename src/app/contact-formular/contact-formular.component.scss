@@ -1,0 +1,21 @@
+input {
+  outline: none;
+  padding: 0.7rem;
+  border: none;
+  color: var(--main);
+  font-size: large;
+  font-weight: 600;
+
+  &::placeholder {
+    font-weight: 400;
+    color: var(--grey);
+  }
+}
+
+button {
+  padding: 12px 24px;
+  outline: none;
+  background-color: inherit;
+  border: 1px solid var(--grey);
+  color: var(--main);
+}

@@ -1,9 +1,54 @@
+/* Ensure the navbar container is positioned relative */
+.d-flex {
+  position: relative;
+  z-index: 1; /* Keep the navbar on top of other elements */
+}
+
+.menu-icon {
+  cursor: pointer;
+}
+
 .menu {
-  font-size: small;
+  display: none;
+  flex-direction: column;
+  background-color: #fff;
+  color: var(--main);
+  padding: 5rem 1.5rem;
+  position: absolute;
+  top: 100%; /* Positions the menu below the navbar */
+  left: 0;
+  width: 100%;
+  transform: translateY(-100%);
+  transition: all 0.3s ease-in-out;
+  z-index: 0; /* Keep it below the navbar */
+  border-bottom: 1px solid var(--main);
+}
+
+.menu.show {
+  display: flex;
+  transform: translateY(0);
+}
+
+.menu a {
+  color: var(--main);
+  text-decoration: none;
+  padding: 0.5rem 0;
 }
 
 .line {
   height: 2px;
-  width: 100%;
-  border-radius: 2px;
+  width: 20px;
+  margin: 0 auto;
+}
+
+.bg-grey {
+  background-color: grey;
+}
+
+.line.rotate1 {
+  transform: rotate(45deg) translate(2px, 2px);
+}
+
+.line.rotate2 {
+  transform: rotate(-45deg) translate(2px, -2px);
 }

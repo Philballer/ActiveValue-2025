@@ -7,4 +7,14 @@ import { BaseIconComponent } from '../base-icon/base-icon.component';
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.scss',
 })
-export class NavbarComponent {}
+export class NavbarComponent {
+  public menuOpen = false;
+
+  public toggleMenu(): void {
+    this.menuOpen = !this.menuOpen;
+  }
+
+  public onAnchorClick(): void {
+    this.menuOpen = false;
+  }
+}
