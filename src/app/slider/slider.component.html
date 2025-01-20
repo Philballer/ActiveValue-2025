@@ -1,3 +1,11 @@
 <div class="image-container mb-4">
-  <img src="bilder-und-icons/sw.png" alt="Banner" />
+  <div class="slider">
+    <img
+      [src]="images[currentImageIndex]"
+      alt="Slider Image"
+      class="slider-image"
+    />
+    <div class="arrow left" (click)="prevImage()">&#10094;</div>
+    <div class="arrow right" (click)="nextImage()">&#10095;</div>
+  </div>
 </div>
