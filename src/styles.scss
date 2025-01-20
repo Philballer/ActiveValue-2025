@@ -2,7 +2,9 @@
   --mobile: 320px;
   --desktop: 1280px;
   --grey: #a8a4a4;
-  --main: #6d6b6b;
+  --main: #898989;
+  --light-grey: #f3f3f3;
+  --main-green: #9bcc3e;
 }
 
 html,
@@ -18,6 +20,10 @@ body {
 
 .bg-grey {
   background-color: var(--grey);
+}
+
+.bg-light-grey {
+  background-color: var(--light-grey);
 }
 
 .text-grey {
@@ -50,4 +56,8 @@ body {
 
 .letter-spacing-tight {
   letter-spacing: -0.05rem;
+}
+
+.card-container {
+  border-top-right-radius: 2.8rem;
 }

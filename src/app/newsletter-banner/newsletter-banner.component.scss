@@ -1,0 +1,21 @@
+.banner {
+  background: linear-gradient(to right, #9bcc3e, #5fbe30);
+  height: 17rem;
+  width: 100%;
+
+  @media screen and (max-width: 320px) {
+    height: 17rem;
+  }
+}
+
+button {
+  padding: 12px 24px;
+  outline: none;
+  background-color: inherit;
+  border: 1px solid #f6f0f0;
+  color: #f6f0f0;
+}
+
+.label {
+  font-size: small;
+}

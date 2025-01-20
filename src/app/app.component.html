@@ -1,5 +1,32 @@
+<!-- Upper body -->
 <div class="p-2 p-sm-4">
   <app-navbar></app-navbar>
   <app-slider></app-slider>
-  <app-body-info></app-body-info>
+  <div class="ms-md-5">
+    <app-body-info></app-body-info>
+  </div>
 </div>
+
+<!-- Cards -->
+<div class="mt-5 bg-light-grey me-4 me-md-5 ps-md-5 pt-2 pb-5 card-container">
+  <div class="ms-md4 d-md-flex">
+    <app-card
+      cardLabel="SERVICE"
+      cardTitle="Keine Angst wir beißen nicht."
+      buttonLabel="Kontakt"
+    ></app-card>
+    <app-card
+      cardLabel="JOBS"
+      cardTitle="Du Willst ein Teil voin uns sein?"
+      buttonLabel="Jobangebote"
+    ></app-card>
+  </div>
+</div>
+
+<!-- Banner -->
+<div class="me-4 me-md-5 banner">
+  <app-newsletter-banner></app-newsletter-banner>
+</div>
+
+<!-- Footer -->
+<app-footer></app-footer>
