@@ -1,1 +1,53 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --mobile: 320px;
+  --desktop: 1280px;
+  --grey: #a8a4a4;
+  --main: #6d6b6b;
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+}
+
+.bg-grey {
+  background-color: var(--grey);
+}
+
+.text-grey {
+  color: var(--grey);
+}
+
+.text-main {
+  color: var(--main);
+}
+
+.letter-spacing-1 {
+  letter-spacing: 0.05rem;
+}
+
+.letter-spacing-2 {
+  letter-spacing: 0.1rem;
+}
+
+.letter-spacing-3 {
+  letter-spacing: 0.15rem;
+}
+
+.letter-spacing-wide {
+  letter-spacing: 0.2rem;
+}
+
+.letter-spacing-wider {
+  letter-spacing: 0.3rem;
+}
+
+.letter-spacing-tight {
+  letter-spacing: -0.05rem;
+}
